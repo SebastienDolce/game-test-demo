@@ -1,0 +1,604 @@
+{
+  "id": "123abc",
+  "type": "singlePlayer",
+  "name": "ElysiumNetwork",
+  "owner": "",
+  "startDir": "ElysiumNetwork/ElysiumMainServer/BobsPC",
+  "extra": "",
+  "network": [
+    {
+      "name": "ElysiumMainServer",
+      "securityLevel": "",
+      "password": "123",
+      "type": "server",
+      "owner": "ENetwork",
+      "commands": ["discon", "ls", "read", "cd", "help", "ssh", "clr", "clear", "pwd", "save", "run", "edit","install"],
+      "visibility": "public", 
+      "roots": [{
+        "name": "EServer",
+        "type": "directory",
+        "author": "EServer",
+        "permissions": "protected",
+        "password": "123",
+        "visibility": "public", 
+        "inText": "test",
+        "keys": [],
+        "objective": "",
+        "contents": [
+          {
+            "name": "ReadMe.txt",
+            "type": "file",
+            "author": "",
+            "permissions": "read_only",
+            "content": "config (.cfg) file usage:\nuse 'edit <.cfg file>' to open the editor.\n use 'set <id> <value>' to set the value of a row",
+            "visibility": "public"
+          },
+          {
+          "name": "config.cfg",
+          "type": "config",
+          "author": "bob",
+          "permissions": "read_write",
+          
+          "visibility": "public", 
+          "inText": "test",
+          "keys": [],
+          "objective": "",
+          "configContents": [
+            ["id","setting", "type", "value"],
+            ["01","firewall", "toggle", "on|off"],
+            ["02","security", "set", "all|none"]],
+          "contents": []}
+          
+              ]},
+        {
+        "name": "BobsPC",
+        "type": "directory",
+        "author": "xbob",
+        "permissions": "read_write",
+        "password": "E1ysium",
+        "visibility": "public", 
+        "inText": "",
+        "keys": [],
+        "objective": "",
+        "contents": [
+		{
+            "name": "email.exe",
+            "type": "program",
+            "author": "admin",
+            "permissions": "read_only",
+            
+            "visibility": "public",
+            "contents": [
+              {
+                "name": "inbox",
+                "type": "directory",
+                "author": "admin",
+                "permissions": "protected",
+                "password": "Chosen1",
+                "visibility": "public",
+                "contents": [
+                  {
+                    "name": "Elysium",
+                    "type": "file",
+                    "altName" : "Access Granted to Secured Project Files",
+                    "author": "admin",
+                    "permissions": "read_only",
+                    
+                    "content": "From: Elysium\nSubject: Access Granted to Secured Project Files\nDate: 6/22/2024 12:05am\nCongratulations on being added to the Elysium team! We are pleased to inform you that you now have access to our secured project files.\nTo access these files, you will need a key to open the hidden ProjectFiles directory. Use the following commands to save the key:\n- save [key]\nPlease note that the key for opening the hidden directory has been provided in the EmployeFiles directory. Ensure that you store it securely using the save command.\nWe have also provided a scan package in order to scan directories for hidden files.\nIf you encounter any issues or need further assistance, do not hesitate to reach out to our support team at support@elysiumcorp.com.\nWelcome aboard, and we look forward to your valuable contributions.\nBest regards,\nThe Elysium Recruitment Team",
+                    "visibility": "public"
+                  },
+                  {
+                    "name": "mail2.msg",
+                    "type": "file",
+                    "author": "admin",
+                    "permissions": "read_only",
+                    
+                    "content": "From: adminSubject: ReminderMessage: Don't forget to update your passwords regularly.",
+                    "visibility": "public"
+                  }
+                ]
+              },
+              {
+                "name": "outbox",
+                "type": "directory",
+                "author": "admin",
+                "permissions": "read_only",
+                
+                "visibility": "public",
+                "contents": [
+                 
+                ]
+              },
+              {
+                "name": "drafts",
+                "type": "directory",
+                "author": "admin",
+                "permissions": "read_only",
+                
+                "visibility": "public",
+                "contents": [
+                  
+                ]
+              }
+            ]
+          },
+          {
+            "name": "WelcomePackage",
+            "type": "directory",
+            "author": "admin",
+            "permissions": "",
+            
+            "visibility": "public", 
+            "inText": "this is public info",
+            "keys": [],
+            "objective": "",
+            "contents": [
+              {
+                "name": "welcome.txt",
+                "type": "file",
+                "author": "admin",
+                "permissions": "protected",
+                
+                "content": "Dear Bob,\nWelcome to Elysium! We are thrilled to have you join our team. Your skills and dedication to your subjects have not gone unnoticed, and we are confident you will be a valuable asset to our organization.\nTo get you started, we have created a company email account for you. Please use the following credentials to log in:\n- Email: bob@elysiumcorp.com\n- Temporary Password: Chosen1\nWe recommend changing your password upon your first login to ensure the security of your account.\nIf you have any questions or need assistance, please do not hesitate to reach out to our support team at support@elysiumcorp.com.\nWe look forward to your contributions and are excited to see what you achieve here at Elysium.\nBest regards,\nThe Elysium Recruitment Team",
+                "visibility": "public",
+                "inText": "",
+                "keys": [],
+                "objective": ""
+              },
+              {
+                "name": "CompanyOverview.txt",
+                "type": "file",
+                "author": "admin",
+                "permissions": "read_only",
+                
+                "content": "Welcome to Elysium Corporation, where innovation meets excellence.\nWe are a leading organization dedicated to pushing the boundaries of technology and human potential.\nOur mission is to create a better future through cutting-edge research and unparalleled dedication to our projects.\n\nOur Values:\n- Innovation: We pride ourselves on our ability to think outside the box and develop groundbreaking solutions.\n- Excellence: Our commitment to quality and excellence drives everything we do.\n- Confidentiality: We understand the importance of discretion and ensure that all projects and information remain secure.\n\nOur Focus Areas:\n- Advanced Research: We conduct extensive research in various fields to develop innovative technologies.\n- Human Potential: Our projects aim to enhance human capabilities and improve quality of life.\n\nEthics and Integrity:\nAt Elysium, we uphold the highest standards of ethics and integrity.\nWe are dedicated to conducting our operations transparently and responsibly.\n\nContact Us:\nFor more information, please reach out to our support team at support@elysiumcorp.com.\n\nNote: Due to the sensitive nature of our work, some project details are classified and accessible only to authorized personnel.",
+                "visibility": "public",
+                "inText": "",
+                "keys": [],
+                "objective": ""
+              },
+			  {
+                "name": "OrientationPackage.txt",
+                "type": "file",
+                "author": "admin",
+                "permissions": "read_only",
+                
+                "content": "Elysium Corp is a leader in technological innovations...",
+                "visibility": "public",
+                "inText": "",
+                "keys": [],
+                "objective": ""
+              }
+            ]
+          },
+          {
+            "name": "EmployeeFiles",
+            "type": "directory",
+            "author": "admin",
+            "permissions": "read_only",
+            
+            "visibility": "private", 
+            "inText": "",
+            "keys": [],
+            "objective": "",
+            "contents": [
+			
+              {
+                "name": "Bob",
+                "type": "directory",
+                "author": "johndoe",
+                "permissions": "read_only",
+                "password": "M1ndControl",
+                "visibility": "private", 
+                "inText": "",
+                "keys": [],
+                "objective": "",
+                "contents": [
+                  {
+                    "name": "bobskey.key",
+                    "type": "key",
+                    "author": "johndoe",
+                    "permissions": "read_only",
+                    
+                    "content": "",
+                    "visibility": "private",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  },
+                  {
+                    "name": "scan.pkg",
+                    "type": "package",
+                    "author": "johndoe",
+                    "permissions": "read_only",
+                    
+                    "content": "You can now scan directories",
+                    "visibility": "private",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  }
+                ]
+              },
+              {
+                "name": "Jane",
+                "type": "directory",
+                "author": "johndoe",
+                "permissions": "read_only",
+                "password": "123",
+                "visibility": "private", 
+                "inText": "",
+                "keys": [],
+                "objective": "",
+                "contents": [
+                  {
+                    "name": "janeskey.key",
+                    "type": "key",
+                    "author": "johndoe",
+                    "permissions": "read_only",
+                    
+                    "content": "",
+                    "visibility": "private",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  },
+                  {
+                    "name": "scan.pkg",
+                    "type": "package",
+                    "author": "johndoe",
+                    "permissions": "read_only",
+                    
+                    "content": "You can now scan directories",
+                    "visibility": "private",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  }
+                ]
+              }
+             
+            ]
+          },
+          {
+            "name": "ProjectFiles",
+            "type": "directory",
+            "author": "admin",
+            "permissions": "read_only",
+            
+            "visibility": "hidden", 
+            "inText": "",
+            "keys": ["bobskey.key"],
+            "objective": "",
+            "contents": [
+              {
+                "name": "ProjectSeraphim",
+                "type": "directory",
+                "author": "admin",
+                "permissions": "read_only",
+                
+                "visibility": "private", 
+                "inText": "",
+                "keys": [],
+                "objective": "",
+                "contents": [
+                  {
+                    "name": "MemoFromIT.txt",
+                    "type": "file",
+                    "author": "admin",
+                    "permissions": "read_only",
+                    
+                    "content": "Memo: Scheduled Maintenance and Important Info\nHi everyone,\nJust a heads-up that we’ve scheduled some routine maintenance for the main servers this Thursday from 2 AM to 4 AM. During this time, you might notice that some of the shared files and tools you use will be temporarily unavailable. Please try to get any important work done before this time so it doesn’t get interrupted.\nAlso, just as a quick reminder—if you need to access any of the local servers during this time, you can still log in as usual. For example, if you use the 'EServer' login to manage security, everything will work the same because the system uses the same IP address on our network, so nothing special needs to be set up.\nIf you run into any problems, feel free to contact the IT team before Thursday.\nThanks for your understanding!\n P.S the Hidden folder is back up.\nBest,\nIT Guy\nIT Department",
+                    "visibility": "private",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  },
+                  {
+                    "name": "MeetingNotes.txt",
+                    "type": "file",
+                    "author": "admin",
+                    "permissions": "read_only",
+                    
+                    "content": "Project Seraphim Meeting Notes\nDate: June 15, 2024\nAttendees: Dr. Smith, Dr. Johnson, Dr. Lee\n\nAgenda:\n- Progress on neurological influence techniques\n- Subject compliance rates\n- Enhancement of cognitive manipulation methods\n- Integration of behavioral conditioning protocols\n- Review of test results on subjects 12-45\n\nAction Items:\n- Dr. Smith to refine signal transmission for improved results\n- Dr. Johnson to analyze latest data on brainwave synchronization\n- Dr. Lee to prepare subjects for next phase of trials\n\nNext Meeting: June 22, 2024\n\n\nProject Seraphim Meeting Notes\nDate: June 22, 2024\nAttendees: Dr. Smith, Dr. Johnson, Dr. Lee\n\nAgenda:\n- Evaluation of new neural interface\n- Monitoring subject adaptation\n- Increasing intensity of behavioral stimuli\n- Detailed review of subjects 46-78\n- Adjustments to compliance enforcement techniques\n\nAction Items:\n- Dr. Smith to optimize neural interface parameters\n- Dr. Johnson to compile comprehensive report on subject adaptation\n- Dr. Lee to escalate behavioral stimuli in controlled environments\n\nNext Meeting: June 29, 2024\n\n\nProject Seraphim Meeting Notes\nDate: June 29, 2024\nAttendees: Dr. Smith, Dr. Johnson, Dr. Lee\n\nAgenda:\n- Analysis of cognitive response to new stimuli\n- Assessment of long-term behavioral changes\n- Implementation of advanced compliance methods\n- Review of subjects 79-101\n- Planning for large-scale trials\n\nAction Items:\n- Dr. Smith to continue cognitive response analysis\n- Dr. Johnson to prepare longitudinal study on behavioral changes\n- Dr. Lee to draft protocol for advanced compliance methods\n\nNext Meeting: July 6, 2024.",
+                    "visibility": "private",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  },
+                  {
+                    "name": "Research",
+                    "type": "directory",
+                    "author": "admin",
+                    "permissions": "read_only",
+                    
+                    "visibility": "private", 
+                    "inText": "",
+                    "keys": [],
+                    "objective": "",
+                    "contents": [
+                      {
+                        "name": "Logs.txt",
+                        "type": "file",
+                        "author": "admin",
+                        "permissions": "read_only",
+                        
+                        "content": "Activity Log for Project Seraphim\nDate: June 15, 2024\n- Conducted EEG scans on subjects 12-20\n- Implemented new auditory stimuli protocol\n- Collected behavioral data post-stimulation\n\nDate: June 16, 2024\n- Analyzed EEG data for synchronization patterns\n- Reviewed initial results from auditory stimuli\n- Adjusted signal frequencies for next trials\n\nDate: June 17, 2024\n- Continued EEG monitoring on subjects 21-30\n- Initiated visual stimulus trials\n- Documented initial responses and brainwave patterns\n\nDate: June 18, 2024\n- Conducted psychological assessments on subjects 31-40\n- Evaluated response to combined auditory-visual stimuli\n- Recorded behavioral observations and compliance levels\n\nDate: June 19, 2024\n- Reviewed EEG data for subjects 41-45\n- Analyzed cognitive processing of stimuli\n- Prepared interim report on phase one trials\n\nDate: June 20, 2024\n- Brainstormed strategies for enhancing cognitive manipulation\n- Discussed potential ethical considerations\n- Planned next steps for phase two implementation\n\nDate: June 21, 2024\n- Conducted preliminary trials for enhanced signal transmission\n- Monitored physiological responses to increased stimuli intensity\n- Compiled data for presentation to senior research team\n\nDate: June 22, 2024\n- Evaluated effectiveness of enhanced signal transmission\n- Conducted focus group sessions with select subjects\n- Noted early behavioral shifts and compliance adjustments\n\nDate: June 23, 2024\n- Reviewed focus group feedback and adjusted protocols\n- Continued EEG scans on subjects 46-50\n- Prepared documentation for regulatory review\n\nDate: June 24, 2024\n- Presented preliminary findings to oversight committee\n- Discussed potential expansion of project scope\n- Submitted revised trial protocols for approval\n",
+                        "visibility": "private",
+                        "inText": "",
+                        "keys": [],
+                        "objective": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hidden",
+            "type": "directory",
+            "author": "admin",
+            "permissions": "protected",
+           
+            "visibility": "hidden", 
+            "inText": "",
+            "keys": [],
+            "switches" : ["01-off"],
+            "objective": "",
+            "contents": [
+              {
+                "name": "secret",
+                "type": "directory",
+                "author": "admin",
+                "permissions": "read_only",
+                
+                "visibility": "hidden", 
+                "inText": "",
+                "keys": [],
+                "objective": "",
+                "contents": [
+                  {
+                    "name": "FinalProof.txt",
+                    "type": "file",
+                    "author": "admin",
+                    "permissions": "read_only",
+                    "password": "FinalReveal123",
+                    "content": "\n__________$$$$$$\n_________$$____$$\n_________$$$__$$$\n_________$$_$$_$$\n_________$$____$$\n_________$$____$$\n_________$$____$$\n_________$$____$$$$$$$\n___$$$$$$$$____$$____$$\n_$$$$$___$$____$$____$$$$$$\n$$$_$$___$$____$$____$$___$$\n$$__$$___$$____$$____$$___$$\n$$__$$___$$____$$____$$___$$\n$$__$$___$$____$$___$$$___$$\n$$__$$___$$____$$____$____$$\n$$____$$$__$$$$__$$$$___$_$$\n$$________________________$$\n_$$_______________________$$\n_$$$_____________________$$\n__$$$$_________________$$$\n____$$_________________$\n____$$$_______________$$\n",
+                    "visibility": "hidden",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }]
+    },
+    {
+      "name": "server1",
+      "securityLevel": "",
+      "solution": "",
+      "type": "",
+      "owner": "s1",
+      "commands": ["ls", "read", "cd", "help", "ssh", "clr", "clear", "pwd", "connect", "discon", "tunnel"],
+      "visibility": "public", 
+      "roots": [{
+        "name": "JanesPC",
+        "type": "directory",
+        "author": "jane",
+        "permissions": "read_write",
+        
+        "visibility": "public", 
+        "inText": "",
+        "keys": [],
+        "objective": "",
+        "contents": [
+          {
+            "name": "PublicInfo2",
+            "type": "directory",
+            "author": "admin",
+            "permissions": "read_only",
+            
+            "visibility": "public", 
+            "inText": "",
+            "keys": [],
+            "objective": "",
+            "contents": [
+              {
+                "name": "Welcome.txt",
+                "type": "file",
+                "author": "admin",
+                "permissions": "read_only",
+                
+                "content": "Welcome to Abstergo Industries. Innovating for a better future.",
+                "visibility": "public",
+                "inText": "",
+                "keys": [],
+                "objective": ""
+              },
+              {
+                "name": "CompanyOverview.txt",
+                "type": "file",
+                "author": "admin",
+                "permissions": "read_only",
+                
+                "content": "Abstergo Industries is a global leader in technology and innovation...",
+                "visibility": "public",
+                "inText": "",
+                "keys": [],
+                "objective": ""
+              }
+            ]
+          },
+          {
+            "name": "EmployeeFiles",
+            "type": "directory",
+            "author": "admin",
+            "permissions": "read_only",
+            
+            "visibility": "private", 
+            "inText": "",
+            "keys": [],
+            "objective": "",
+            "contents": [
+              {
+                "name": "RebeccaC",
+                "type": "directory",
+                "author": "rebeccac",
+                "permissions": "read_only",
+                
+                "visibility": "private", 
+                "inText": "",
+                "keys": [],
+                "objective": "",
+                "contents": [
+                  {
+                    "name": "Notes.txt",
+                    "type": "file",
+                    "author": "rebeccac",
+                    "permissions": "read_only",
+                    
+                    "content": "Meeting with Dr. Warren on Project Nexus. Password: EagleVision2024",
+                    "visibility": "private",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  }
+                ]
+              },
+              {
+                "name": "ShaunH",
+                "type": "directory",
+                "author": "shaunh",
+                "permissions": "read_only",
+                
+                "visibility": "private", 
+                "inText": "",
+                "keys": [],
+                "objective": "",
+                "contents": [
+                  {
+                    "name": "Todo.txt",
+                    "type": "file",
+                    "author": "shaunh",
+                    "permissions": "read_only",
+                    
+                    "content": "1. Update Animus software2. Secure server access (New password: Brotherhood2024)",
+                    "visibility": "private",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "ProjectFiles",
+            "type": "directory",
+            "author": "admin",
+            "permissions": "read_only",
+            
+            "visibility": "private", 
+            "inText": "",
+            "keys": [],
+            "objective": "",
+            "contents": [
+              {
+                "name": "ProjectNexus",
+                "type": "directory",
+                "author": "admin",
+                "permissions": "read_only",
+                "password": "EagleVision2024",
+                "visibility": "private", 
+                "inText": "",
+                "keys": [],
+                "objective": "",
+                "contents": [
+                  {
+                    "name": "Overview.txt",
+                    "type": "file",
+                    "author": "admin",
+                    "permissions": "read_only",
+                    
+                    "content": "Project Nexus aims to control human consciousness using the latest Piece of Eden.",
+                    "visibility": "private",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  },
+                  {
+                    "name": "Research",
+                    "type": "directory",
+                    "author": "admin",
+                    "permissions": "read_only",
+                    "password": "Brotherhood2024",
+                    "visibility": "private", 
+                    "inText": "",
+                    "keys": [],
+                    "objective": "",
+                    "contents": [
+                      {
+                        "name": "Findings.txt",
+                        "type": "file",
+                        "author": "admin",
+                        "permissions": "read_only",
+                        
+                        "content": "Initial tests show promise but ethical concerns are high...",
+                        "visibility": "private",
+                        "inText": "",
+                        "keys": [],
+                        "objective": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Hidden",
+            "type": "directory",
+            "author": "admin",
+            "permissions": "read_only",
+            
+            "visibility": "hidden", 
+            "inText": "",
+            "keys": [],
+            "objective": "",
+            "contents": [
+              {
+                "name": ".secret",
+                "type": "directory",
+                "author": "admin",
+                "permissions": "read_only",
+                
+                "visibility": "hidden", 
+                "inText": "",
+                "keys": [],
+                "objective": "",
+                "contents": [
+                  {
+                    "name": "FinalProof.txt",
+                    "type": "file",
+                    "author": "admin",
+                    "permissions": "read_only",
+                    "password": "FinalTruth2024",
+                    "content": "Project Nexus is a plan to control human minds through a new Piece of Eden. Expose immediately!",
+                    "visibility": "hidden",
+                    "inText": "",
+                    "keys": [],
+                    "objective": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }]
+    }
+  ]
+}
