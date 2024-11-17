@@ -1,0 +1,81 @@
+{
+  "id": "defaultUserNetworkID",
+  "type": "singlePlayer",
+  "name": "DefaultUserNetwork",
+  "owner": "",
+  "triggers" : [{"id": "001", "name" : "Jason", "type": "email","content": "From: Jason\nSubject: Need Your Help ASAP!!!\nDate: 6/1862024 11:05am\nI need your help. Some creep's been following my girlfriend, and it's getting scary. I installed that script you gave me a while back on her phone, it says 'connection established: connect with ssh bob@74.65.222.13', but I don't know what to do next. Can you help me track this guy down? We're desperate. Thanks, man.","text": "Need Your Help ASAP!!!","date": "06/16/2024"},
+  {"id": "002","name": "Jason", "type": "email", "content": "From: Jason\nSubject: Crack Program Ready\nDate: 06/18/2024 2:15pm\nThe 'crack' program is set. Use 'crack <pkg>' to start cracking passwords. You'll need to guess the correct sequence of symbols to unlock it.\n\nHere's how it works: after each guess, you'll get feedback on whether you got a symbol in the correct spot or if a correct symbol is in the wrong spot. Use that feedback to narrow down the sequence. Keep guessing until you crack the code.\n\nGood luck!","text": "Crack Program Ready", "date": "06/18/2024"}],
+  "startDir": "defaultUser/root",
+  "extra": "",
+  "network": [
+    {
+      "name": "defaultUser",
+      "type": "server",
+      "owner": "",
+      "commands": ["discon", "ls", "read", "cd", "help", "ssh", "clr", "clear", "pwd", "save", "run", "scan", "edit","install"],
+      "visibility": "public",
+      "roots": [{
+        "name": "root",
+        "type": "directory",
+        "author": "admin",
+        "permissions": "read_write",
+        "visibility": "public",
+        "contents": [
+          {
+            "name": "data",
+            "type": "directory",
+            "author": "admin",
+            "inText" : "",
+            "permissions": "read_only",
+                        "visibility": "public",
+            "contents": [
+              
+              {
+                "name": "README.txt",
+                "type": "file",
+                "author": "me",
+                "permissions": "read_only",
+                "password": "",
+                "content": "insert keycard in reader and use the save command to save the key to the keycard",
+                "visibility": "private"
+              },
+              {
+                "name": "door1.key",
+                "type": "file",
+                "author": "userKeys",
+                "permissions": "read_only",
+                "content": "key 1: XXXXX\nKey2: XXXXXX",
+                "visibility": "public"
+              }
+            ]
+          },
+          {
+            "name": "packages",
+            "type": "directory",
+            "author": "admin",
+            "inText" : "",
+            "password": "123abc",
+            "permissions": "read_only",
+                        "visibility": "public",
+            "contents": [
+              
+              {
+                "name": "crack.pkg",
+                "type": "package",
+                "author": "johndoe",
+                "permissions": "read_only",
+                "password": "",
+                "content": "You can now crack passwords",
+                "visibility": "private",
+                "inText": "",
+                "keys": [],
+                "objective": ""
+              }
+            ]
+          }
+          
+        ]
+      }]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "123abc",
+  "type": "singlePlayer",
+  "name": "TestNetwork",
+  "owner": "test",
+  "network": [{
+      "name": "TestServer",
+      "type": "server",
+      "owner": "admin",
+      "commands": ["discon", "ls", "read", "cd", "help", "ssh", "clr", "clear", "pwd", "save", "run", "scan", "edit","crack"],
+      "roots": [{
+"name": "root",
+"type": "directory",
+"author": "admin",
+"contents" : [{
+"name": "PassDir",
+"password": "123",
+"type": "directory",
+"author": "admin",
+"contents" : []
+},{
+"name": "RegTxt",
+"type": "file",
+"author": "admin",
+"content" : "good test"
+}]
+}]
+}]
+}
